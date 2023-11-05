@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import AppImg from './azure-image-analysis';
 function App() {
   // Estado para almacenar la URL de la imagen o la solicitud
   const [inputValue, setInputValue] = useState('');
@@ -24,17 +24,11 @@ function App() {
   }
 
   return (
-    <div>
+     <div>
       <h1>Aplicación de Análisis y Generación de Imágenes</h1>
-      <input
-        type="text"
-        placeholder="Ingrese la URL de la imagen o solicitud"
-        value={inputValue}
-        onChange={handleInputChange}
-      />
-      <br />
-      <button onClick={handleImageAnalysis}>Analizar Imagen</button>
-      <button onClick={handleImageGeneration}>Generar Imagen</button>
+
+      <AppImg/>
+      
     </div>
   );
 }
